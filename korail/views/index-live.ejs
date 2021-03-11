@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/stylesheets/schedule.css">
+</head>
+
+<body>
+  <div id="departure" class="container">
+    <div class="header">
+      <span class="title">열 차 출 발 안 내</span>
+      <span class="time">
+        <span>
+          <span>현재시간</span>
+          <span>
+            <span class="hour">10</span><span>:</span><span class="min">30</span>
+          </span>
+        </span>
+      </span>
+      <svg class="logo" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+        id="Layer_1" x="0px" y="0px" height="16" viewBox="0 0 171.36 39.66" xml:space="preserve">
+        <g id="g63" transform="translate(-12.89707,-76.039036)">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 20.02407,84.276 c -1.343,0.104 -2.066,1.033 -2.169,2.376 l -4.958,24.375 9.502,-0.103 2.479,-11.775 8.676,11.878 h 11.878 l -11.775,-15.803 11.671,-10.949 h -10.019 l -9.089,8.263 2.066,-8.263 h -8.262 z"
+            id="path33" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 99.24607,104.211 c -0.62,-2.066 -17.249,-8.986 -30.16,-11.258 -12.808,-2.272 -21.174,1.549 -22.104,7.849 -1.239,8.677 8.676,15.287 19.521,14.874 8.263,-0.207 17.042,-6.507 19.315,-15.803 l 3.925,1.342 -2.272,9.813 h 10.225 z"
+            id="path35" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 149.85707,87.685 -3.926,23.343 h 9.71 l 4.544,-26.648 h -7.54 c -1.548,-10e-4 -2.374,0.723 -2.788,3.305 z"
+            id="path37" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 165.35107,86.548 -4.132,24.479 h 22.104 l 0.93,-6.094 h -12.91 l 3.821,-20.554 h -7.127 c -1.86,0 -2.584,0.827 -2.686,2.169 z"
+            id="path39" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 138.70207,84.379 h -9.09 c -1.343,0 -2.375,0.723 -3.099,2.272 l -10.639,20.347 -7.953,-6.816 c 3.306,-1.033 6.198,-2.582 7.644,-5.474 2.893,-5.165 2.272,-11.361 -5.681,-11.361 h -14.77 c -1.136,0.103 -1.549,1.239 -1.962,2.582 l -2.169,10.535 c -14.254,-8.883 -29.541,-14.667 -37.7,-11.361 3.718,-3.202 8.676,-5.578 14.46,-4.028 6.507,1.962 12.291,6.506 17.972,10.535 -1.549,-5.887 -7.333,-14.15 -17.766,-15.39 -12.911,-1.55 -21.277,7.127 -23.549,15.7 8.16,-5.268 19.315,-7.333 45.033,5.681 6.92,3.512 13.324,7.746 19.005,13.427 h 13.737 l 9.193,-17.559 3.614,17.559 h 9.813 z m -38.217,12.601 2.065,-9.192 h 4.132 c 4.442,3.305 -1.342,9.916 -6.197,9.192 z"
+            id="path41" />
+        </g>
+      </svg>
+    </div>
+    <table id="departure-board" class="board">
+      <colgroup>
+        <col style="width: 40px" />
+        <col style="width: 80px" />
+        <col style="width: auto" />
+        <col style="width: auto" />
+        <col style="width: 80px" />
+        <col style="width: 80px" />
+        <col style="width: 80px" />
+      </colgroup>
+      <tr>
+        <th></th>
+        <th>출발시간</th>
+        <th>도착역</th>
+        <th>열차종류</th>
+        <th>열차번호</th>
+        <th>타는곳</th>
+        <th>지연</th>
+      </tr>
+      <!--
+      <tr class="normal">
+        <td>●</td>
+        <td>10:42</td>
+        <td>서울</td>
+        <td>무궁화호</td>
+        <td>1204</td>
+        <td>6</td>
+        <td>0분</td>
+      </tr>
+      <tr class="ktx">
+        <td></td>
+        <td>11:05</td>
+        <td>서울</td>
+        <td>KTX</td>
+        <td>232</td>
+        <td>6</td>
+        <td>0분</td>
+      </tr>
+      -->
+    </table>
+  </div>
+
+  <div id="arrival" class="container">
+    <div class="header">
+      <span class="title">열 차 도 착 안 내</span>
+      <span class="time">
+        <span>
+          <span>현재시간</span>
+          <span>
+            <span class="hour">10</span><span>:</span><span class="min">30</span>
+          </span>
+        </span>
+      </span>
+      <svg class="logo" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+        id="Layer_1" x="0px" y="0px" height="16" viewBox="0 0 171.36 39.66" xml:space="preserve">
+        <g id="g63" transform="translate(-12.89707,-76.039036)">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 20.02407,84.276 c -1.343,0.104 -2.066,1.033 -2.169,2.376 l -4.958,24.375 9.502,-0.103 2.479,-11.775 8.676,11.878 h 11.878 l -11.775,-15.803 11.671,-10.949 h -10.019 l -9.089,8.263 2.066,-8.263 h -8.262 z"
+            id="path33" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 99.24607,104.211 c -0.62,-2.066 -17.249,-8.986 -30.16,-11.258 -12.808,-2.272 -21.174,1.549 -22.104,7.849 -1.239,8.677 8.676,15.287 19.521,14.874 8.263,-0.207 17.042,-6.507 19.315,-15.803 l 3.925,1.342 -2.272,9.813 h 10.225 z"
+            id="path35" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 149.85707,87.685 -3.926,23.343 h 9.71 l 4.544,-26.648 h -7.54 c -1.548,-10e-4 -2.374,0.723 -2.788,3.305 z"
+            id="path37" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 165.35107,86.548 -4.132,24.479 h 22.104 l 0.93,-6.094 h -12.91 l 3.821,-20.554 h -7.127 c -1.86,0 -2.584,0.827 -2.686,2.169 z"
+            id="path39" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m 138.70207,84.379 h -9.09 c -1.343,0 -2.375,0.723 -3.099,2.272 l -10.639,20.347 -7.953,-6.816 c 3.306,-1.033 6.198,-2.582 7.644,-5.474 2.893,-5.165 2.272,-11.361 -5.681,-11.361 h -14.77 c -1.136,0.103 -1.549,1.239 -1.962,2.582 l -2.169,10.535 c -14.254,-8.883 -29.541,-14.667 -37.7,-11.361 3.718,-3.202 8.676,-5.578 14.46,-4.028 6.507,1.962 12.291,6.506 17.972,10.535 -1.549,-5.887 -7.333,-14.15 -17.766,-15.39 -12.911,-1.55 -21.277,7.127 -23.549,15.7 8.16,-5.268 19.315,-7.333 45.033,5.681 6.92,3.512 13.324,7.746 19.005,13.427 h 13.737 l 9.193,-17.559 3.614,17.559 h 9.813 z m -38.217,12.601 2.065,-9.192 h 4.132 c 4.442,3.305 -1.342,9.916 -6.197,9.192 z"
+            id="path41" />
+        </g>
+      </svg>
+    </div>
+    <table id="arrival-board" class="board">
+      <colgroup>
+        <col style="width: 40px" />
+        <col style="width: 80px" />
+        <col style="width: auto" />
+        <col style="width: auto" />
+        <col style="width: 80px" />
+        <col style="width: 80px" />
+        <col style="width: 80px" />
+      </colgroup>
+      <tr>
+        <th></th>
+        <th>도착시간</th>
+        <th>출발역</th>
+        <th>열차종류</th>
+        <th>열차번호</th>
+        <th>내리는곳</th>
+        <th>지연</th>
+      </tr>
+    </table>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+    integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+    crossorigin="anonymous"></script>
+  <script>
+    Date.prototype.sumDate = function (date) {
+      return (this.getTime() - date.getTime()) / 1000;
+    }
+  </script>
+  <script>
+    this.trains = [];
+    GetData();
+    setInterval(GetData, 10 * 1000);
+    setInterval(() => {
+      var board = document.getElementById("departure-board").children[1];
+      board.innerHTML = "<tr><th></th><th>출발시간</th><th>도착역</th><th>열차종류</th><th>열차번호</th><th>타는곳</th><th>지연</th></tr>";
+      var count = 0;
+      for (var i = 0; i < trains.length; i++) {
+        if (count >= 10) return;
+        var train = trains[i];
+        if (train.type == "skip") continue;
+        if (train.type == "dest") continue;
+        var isKTX = train.trn_kind == "KTX" || train.trn_kind == "KTX-산천" || train.trn_kind == "KTX_산천";
+        var date_s = train.dep_ts.substr(0, 5);
+        var date = Time(train.dep_ts);
+        if (date < new Date()) continue;
+        var minute = date.sumDate(new Date()) / 60;
+
+        var html = "";
+        html += `<tr class="${isKTX ? "ktx" : "normal"}">`
+        html += `<td>${minute <= 15 ? "●" : ""}</td>`;
+        html += `<td>${date_s}</td>`;
+        html += `<td>${train.dep_stn_nm}</td>`;
+        html += `<td>${train.trn_kind}</td>`;
+        html += `<td>${train.trn_no}</td>`;
+        html += `<td></td>`;
+        html += `<td>${Math.floor(train.late)}분</td>`;
+        html += "</tr>";
+        board.innerHTML += html;
+        count++;
+      }
+    }, 1000);
+    setInterval(() => {
+      var board = document.getElementById("arrival-board").children[1];
+      board.innerHTML = "<tr><th></th><th>도착시간</th><th>출발역</th><th>열차종류</th><th>열차번호</th><th>내리는곳</th><th>지연</th></tr>";
+      var count = 0;
+      for (var i = 0; i < trains.length; i++) {
+        if (count >= 10) return;
+        var train = trains[i];
+        if (train.type == "skip") continue;
+        if (train.type == "dept") continue;
+        var isKTX = train.trn_kind == "KTX" || train.trn_kind == "KTX-산천" || train.trn_kind == "KTX_산천";
+        var date_s = train.arv_ts.substr(0, 5);
+        var date = Time(train.arv_ts);
+        if (date < new Date()) continue;
+        var minute = date.sumDate(new Date()) / 60;
+
+        var html = "";
+        html += `<tr class="${isKTX ? "ktx" : "normal"}">`
+        html += `<td>${minute <= 15 ? "●" : ""}</td>`;
+        html += `<td>${date_s}</td>`;
+        html += `<td>${train.arv_stn_nm}</td>`;
+        html += `<td>${train.trn_kind}</td>`;
+        html += `<td>${train.trn_no}</td>`;
+        html += `<td></td>`;
+        html += `<td>${Math.floor(train.late)}분</td>`;
+        html += "</tr>";
+        board.innerHTML += html;
+        count++;
+      }
+    }, 1000);
+    setInterval(() => {
+      for (var hour of document.getElementsByClassName("hour")) {
+        hour.innerText = NumberPadding(new Date().getHours(), 2);
+      }
+      for (var min of document.getElementsByClassName("min")) {
+        min.innerText = NumberPadding(new Date().getMinutes(), 2);
+      }
+    }, 100);
+
+    function GetData() {
+      const URLSearch = new URLSearchParams(location.search);
+      axios({
+        method: 'GET',
+        url: '/GetMetroArriveInfo?name=' + URLSearch.get("name")
+      })
+        .then(response => {
+          this.trains = response.data.trains;
+          console.log(response);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+    function Time(str) {
+      var date = new Date();
+      var arr = str.split(':');
+      date.setHours(arr[0]);
+      date.setMinutes(arr[1]);
+      date.setSeconds(arr[2]);
+      return date;
+    }
+    function NumberPadding(n, width) {
+      n = n.toString();
+      return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
+    }
+  </script>
+</body>
+
+</html>

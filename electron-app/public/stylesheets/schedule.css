@@ -34,7 +34,7 @@ body {
 .container {
     font-family: DungGeunMo;
     background-color: black;
-    color: greenyellow;
+    color: orange;
     text-align: center;
     border: 1rem solid #170e18;
 }
@@ -108,13 +108,19 @@ tr > td:nth-child(1) {
     position: absolute;
     right: 10px;
     bottom: 0px;
-    fill: greenyellow;
+    fill: orange;
 }
 
+/*
 .ktx {
     color: orange;
 }
+*/
 
 .normal {
+    color: orange;
+}
+
+.soon {
     color: greenyellow;
 }

@@ -16,11 +16,11 @@ setInterval(() => {
         var isKTX = train.trn_kind == "KTX" || train.trn_kind == "KTX-산천" || train.trn_kind == "KTX_산천";
         var date_s = train.dep_ts.substr(0, 5);
         var date = Time(train.dep_ts);
-        if (date < new Date()) continue;
+        if (date < new Date() || (date.getHours() > 12 && new Date().getHours() < 12)) continue;
         var minute = date.sumDate(new Date()) / 60;
 
         var html = "";
-        html += `<tr class="${isKTX ? "ktx" : "normal"}">`;
+        html += `<tr class="${minute <= 15 ? "soon" : "normal"}">`;
         html += `<td>${minute <= 15 ? "●" : ""}</td>`;
         html += `<td>${date_s}</td>`;
         html += `<td>${train.dep_stn_nm}</td>`;
@@ -45,12 +45,12 @@ setInterval(() => {
         var isKTX = train.trn_kind == "KTX" || train.trn_kind == "KTX-산천" || train.trn_kind == "KTX_산천";
         var date_s = train.arv_ts.substr(0, 5);
         var date = Time(train.arv_ts);
-        if (date < new Date()) continue;
+        if (date < new Date() || (date.getHours() > 12 && new Date().getHours() < 12)) continue;
         console.log(date.getHours(), new Date().getHours());
         var minute = date.sumDate(new Date()) / 60;
 
         var html = "";
-        html += `<tr class="${isKTX ? "ktx" : "normal"}">`;
+        html += `<tr class="${minute <= 15 ? "soon" : "normal"}">`;
         html += `<td>${minute <= 15 ? "●" : ""}</td>`;
         html += `<td>${date_s}</td>`;
         html += `<td>${train.arv_stn_nm}</td>`;
